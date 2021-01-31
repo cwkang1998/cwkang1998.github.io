@@ -11,17 +11,15 @@ const config = {
   dateFormat: "DD/MM/YYYY", // Date format for display.
   userName: "Chen Wen Kang", // Username to display in the author segment.
   userEmail: "wenkangchen4@gmail.com", // Email used for RSS feed's author segment
-  userTwitter: "gatsbyjs", // Optionally renders "Follow Me" in the Bio segment.
-  userGitHub: "gatsbyjs", // Optionally renders "Follow Me" in the Bio segment.
+  userTwitter: "ChenWenKang1", // Optionally renders "Follow Me" in the Bio segment.
+  userGitHub: "cwkang1998", // Optionally renders "Follow Me" in the Bio segment.
   userLocation: "Kuala Lumpur, Malaysia", // User location to display in the author segment.
   userAvatar: "https://i.ibb.co/WPz9CNk/avatar.jpg", // User avatar to display in the author segment.
   userDescription: "", // User description to display in the author segment.
   copyright: "Copyright © 2021. All rights reserved.", // Copyright string for the footer of the website and RSS feed.
-  themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "red" // Used for setting manifest background color.
+  themeColor: "#c2d9ff", // Used for setting manifest and progress theme colors.
+  backgroundColor: "#082554" // Used for setting manifest background color.
 };
-
-// Validate
 
 // Make sure pathPrefix is empty if not needed
 if (config.pathPrefix === "/") {
@@ -34,9 +32,5 @@ if (config.pathPrefix === "/") {
 // Make sure siteUrl doesn't have an ending forward slash
 if (config.siteUrl.substr(-1) === "/")
   config.siteUrl = config.siteUrl.slice(0, -1);
-
-// Make sure siteRss has a starting forward slash
-// if (config.siteRss && config.siteRss[0] !== "/")
-//   config.siteRss = `/${config.siteRss}`;
 
 module.exports = config;

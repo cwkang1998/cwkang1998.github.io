@@ -5,7 +5,7 @@ header {
   padding: 1rem;
   position: sticky;
   top: 0;
-  background: hsla(0, 0%, 100%, 0.75);
+  background: #2B303Ae5;
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
   z-index: 9;
@@ -13,19 +13,22 @@ header {
   margin-right: auto;
   height: 70px;
 
-  a {
-    text-decoration: none;
-    color: #3c4856;
-    font-size: 1.1rem;
-    margin-top: 0;
-  }
-
   h1 {
     margin-top: 5px;
+    a {
+      text-decoration: none;
+      color: #D64933;
+      font-size: 1.1rem;
+      margin-top: 0;
+
+      &:hover {
+        color: #D64933;
+      }
+    }
   }
 
   nav a {
-    color: #757575;
+    color: #EEE5E9;
     transition: color 0.2s ease;
     text-decoration: none;
     display: inline-block;
@@ -33,19 +36,13 @@ header {
     font-size: 16px;
 
     &:hover {
-      color: #4f647d;
-    }
-
-    strong {
-      margin: 1px;
-      color: #4f647d;
-      font-size: 0.8rem;
+      color: #D64933;
     }
   }
 
   .activeNav {
-    color: #4f647d;
-    font-weight: 700;
+    color: #D64933;
+    font-weight: bolder;
   }
 }
 
@@ -66,7 +63,7 @@ header {
   li {
     font-size: 1.3rem;
 
-    &+li {
+    & + li {
       margin-left: 1.5rem;
     }
   }
@@ -96,7 +93,7 @@ header {
 
   .main-nav {
     li {
-      &+li {
+      & + li {
         margin-left: 1rem;
       }
     }
