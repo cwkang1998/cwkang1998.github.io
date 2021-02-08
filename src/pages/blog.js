@@ -2,23 +2,24 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
+import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 
-const Index = ({ data }) => (
+const Blog = ({ data }) => (
   <Layout>
     <main>
       <Helmet title={config.siteTitle} />
       <SEO />
+      <PostListing postEdges={data.allMarkdownRemark.edges} />
     </main>
   </Layout>
 );
 
-export default Index;
+export default Blog;
 
-/* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogQuery {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [fields___date], order: DESC }
