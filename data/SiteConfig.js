@@ -2,6 +2,7 @@ const config = {
   siteTitle: "Chen Wen Kang", // Site title.
   siteTitleShort: "Chen Wen Kang", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "cwkang1998", // Alternative site title for SEO.
+  icon: "src/images/icon.png",
   siteUrl: "https://cwkang1998.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "Personal portfolio site and blog.", // Website description used for RSS feeds/meta description tag.

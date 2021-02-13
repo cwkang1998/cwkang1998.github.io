@@ -19,7 +19,7 @@ const SEO = ({ postNode, postPath, postSEO }) => {
   } else {
     title = config.siteTitle;
     description = config.siteDescription;
-    image = config.siteLogo;
+    image = config.icon;
   }
 
   image = urljoin(config.siteUrl, config.pathPrefix, image);
