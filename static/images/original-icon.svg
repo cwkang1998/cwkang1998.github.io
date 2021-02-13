@@ -16,7 +16,7 @@
    inkscape:export-xdpi="4837.4155"
    inkscape:export-ydpi="4837.4155"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="icon_des.svg">
+   sodipodi:docname="original-icon.svg">
   <defs
      id="defs765" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="15.839192"
+     inkscape:zoom="18.865268"
      inkscape:cx="367.32531"
      inkscape:cy="523.29267"
      inkscape:document-units="mm"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -66,7 +66,7 @@
        y="135.72539" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.51674px;line-height:1.25;font-family:'IBM 3270';-inkscape-font-specification:'IBM 3270, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#d64933;fill-opacity:1;stroke:none;stroke-width:0.0879185"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.51674px;line-height:1.25;font-family:'IBM 3270';-inkscape-font-specification:'IBM 3270, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#2ec4b6;fill-opacity:1;stroke:none;stroke-width:0.0879185;"
        x="94.032417"
        y="143.1774"
        id="text1696"
@@ -75,6 +75,6 @@
          id="tspan1694"
          x="94.032417"
          y="143.1774"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.51674px;font-family:'IBM 3270';-inkscape-font-specification:'IBM 3270, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#d64933;fill-opacity:1;stroke-width:0.0879185">WK</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.51674px;font-family:'IBM 3270';-inkscape-font-specification:'IBM 3270, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2ec4b6;fill-opacity:1;stroke-width:0.0879185;">WK</tspan></text>
   </g>
 </svg>

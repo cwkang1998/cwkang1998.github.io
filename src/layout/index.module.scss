@@ -20,7 +20,6 @@ main {
   max-width: 50rem;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   padding: 20px;
 }
 
@@ -28,19 +27,19 @@ article {
   height: 90%;
 
   &:hover {
-    box-shadow: 0px 4px 8px 4px #272727;
+    box-shadow: 0px 4px 8px 4px #2EC4B6;
     border-radius: 5px;
   }
 }
 
 a { 
-  color: #D64933;
+  color: #2EC4B6;
   &:hover {
-    color: #d64933b2;
+    color: #2EC4B67c;
   }
 }
 
 blockquote { 
-  border-color: #D64933;
+  border-color: #2EC4B6;
   color: #EEE5E9;
 }
