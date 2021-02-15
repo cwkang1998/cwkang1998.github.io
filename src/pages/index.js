@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
 import SEO from "../components/SEO";
+import Banner from "../components/Banner";
 import config from "../../data/SiteConfig";
 
 const Index = ({ data }) => (
@@ -10,6 +11,7 @@ const Index = ({ data }) => (
     <main>
       <Helmet title={config.siteTitle} />
       <SEO />
+      <Banner />
     </main>
   </Layout>
 );
@@ -20,7 +22,7 @@ export default Index;
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      limit: 2000
+      limit: 3
       sort: { fields: [fields___date], order: DESC }
     ) {
       edges {

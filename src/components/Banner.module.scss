@@ -1,0 +1,23 @@
+.banner {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    h1{ 
+        margin: 0;
+    }
+    .imageContainer {
+        text-align: center;
+        width: 200px;
+        margin: auto;
+        padding: 16px;
+    }
+    .bannerTitle{
+        margin:auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+    }
+}
