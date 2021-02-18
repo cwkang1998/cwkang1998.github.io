@@ -2,12 +2,12 @@ import React from "react";
 import Helmet from "react-helmet";
 import Layout from "../layout";
 import config from "../../data/SiteConfig";
-import "./about.module.scss";
+import styles from "./about.module.scss";
 
 const AboutPage = () => (
   <Layout>
     <Helmet title={`About | ${config.siteTitle}`} />
-    <main>
+    <main className={styles.about}>
       <h1>Hi, I&apos;m Chen!</h1>
       <p>
         I am a full-stack software engineer from Kuala Lumpur, Malaysia. Born in

@@ -1,28 +1,30 @@
-h3{
-  text-align: center;
-}
-form {
-  width: 50%;
-  label {
-    display: block;
+.container {
+  h3{
+    text-align: center;
   }
-
-  input, textarea {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 8px;
-  }
-
-  input[type=submit]{
-    margin-top: 24px;
-    padding: 0;
-  }
-}
-
-
-@media (max-width: 768px) {
   form {
-    width: 100%;
+    width: 50%;
+    label {
+      display: block;
+    }
+  
+    input, textarea {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 8px;
+    }
+  
+    input[type=submit]{
+      margin-top: 24px;
+      padding: 0;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    form {
+      width: 100%;
+    }
   }
 }

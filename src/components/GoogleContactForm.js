@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./GoogleContactForm.module.scss";
+import styles from "./GoogleContactForm.module.scss";
 
 const GoogleContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   return (
-    <div>
+    <div className={styles.container}>
       <form
         method="GET"
         action="https://docs.google.com/forms/d/e/1FAIpQLScKebTypPR5iOz1uBlrrJwn3sdt1Ma0LcnIDxrsRPU94SzdWQ/formResponse"
