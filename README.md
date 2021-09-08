@@ -1,6 +1,8 @@
-# Website
+# Personal Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+
+This website will be used as a personal documentation site for me and also a place to write down some technical blog posts.=
 
 ### Installation
 
