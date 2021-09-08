@@ -55,7 +55,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: 'Tutorial',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/cwkang1998/cwkang1998.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -74,20 +74,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
             title: 'More',
             items: [
               {
                 label: 'Blog',
                 to: '/blog',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/ChenWenKang1',
               },
               {
                 label: 'GitHub',
