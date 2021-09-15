@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'Chen Wen Kang',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Documenting and blogging about technical stuff I learnt in my journey.',
   url: 'https://cwkang1998.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -40,6 +40,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: "img/my-logo.svg",
       navbar: {
         title: 'Chen Wen Kang',
         logo: {

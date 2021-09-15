@@ -1,5 +1,10 @@
 ---
 sidebar_position: 1
+keywords:
+    - docs
+    - cwk docs
+    - cwk's docs
+    - documentation
 ---
 
 # Tutorial Intro
