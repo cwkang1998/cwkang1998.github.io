@@ -87,7 +87,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/cwkang1998/cwkang1998.github.io',
+                href: 'https://github.com/cwkang1998',
               },
             ],
           },
