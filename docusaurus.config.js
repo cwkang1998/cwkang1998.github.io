@@ -53,11 +53,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentations',
           },
           {
             href: 'https://github.com/cwkang1998/cwkang1998.github.io',
-            label: 'GitHub',
+            label: 'Source',
             position: 'right',
           },
         ],
@@ -66,28 +66,32 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentations',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Development',
+                to: '/docs/dev/intro',
+              },
+              {
+                label: 'Devops',
+                to: '/docs/devops/intro',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Socials',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'GitHub',
+                href: 'https://github.com/cwkang1998',
+              },
+              {
+                label: 'Linkedin',
+                href: 'https://www.linkedin.com/in/chenwenkang/',
               },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/ChenWenKang1',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/cwkang1998',
               },
             ],
           },
