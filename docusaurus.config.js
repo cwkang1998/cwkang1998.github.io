@@ -10,7 +10,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/my-logo.svg',
+  favicon: 'img/cwk.png',
   organizationName: 'cwkang1998', // Usually your GitHub org/user name.
   projectName: 'cwkang1998.github.io', // Usually your repo name.
 
@@ -40,12 +40,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/my-logo.svg",
+      image: "img/cwk.png",
       navbar: {
         title: 'Chen Wen Kang',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/my-logo.svg',
+          src: 'img/cwk.png',
         },
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
