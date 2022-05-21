@@ -1,0 +1,11 @@
+entries:
+  - title: me
+    entries:
+      - title: wanderer in the world of tech
+      - title: email
+        url: mailto:wenkangchen4@gmail.com
+      - title: github
+        url: http://github.com/cwkang1998/
+  - title:  <a href='/feed.xml'>rss feed</a>
+  - title: stuffs
+    post_list: true

@@ -1,0 +1,15 @@
+title: cwk's digital garden
+email: wenkangchen4@gmail.com
+url: "https://cwkang1998.github.io"
+baseurl: ""
+github_username:  cwkang1998
+
+theme: no-style-please
+favicon: "favicon.png"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+include:
+  - _pages
