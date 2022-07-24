@@ -8,7 +8,9 @@ github_username:  cwkang1998
 theme: no-style-please
 theme_config:
   date_format: "%Y-%m-%d"
-
+  appearance: "dark"
+  back_home_text: ".."
+  
 favicon: "favicon.png"
 
 plugins:
