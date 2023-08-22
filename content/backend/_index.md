@@ -1,5 +1,5 @@
 +++
 sort_by = "date"
-title = "--- Backend ---"
+title = "[ Backend ]"
 weight = 1
 +++
