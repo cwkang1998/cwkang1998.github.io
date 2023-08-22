@@ -1,8 +1,7 @@
----
-layout: post
-title: Deploying to VM using pm2 deploy via gitlab ci
-slug: pm2-gitlab-deploy
----
++++
+title = "Deploying to VM using pm2 deploy via gitlab ci"
+date = 2022-07-24
++++
 
 I host some of my work code repository on gitlab, and often deploy builds to a virtual machine manually. To reduce the effort and mental overhead of deployment, I eventually figured out how to setup automatic deployment from selected branch into selected environment on push.
 
@@ -65,7 +64,7 @@ module.exports = {
 Remember to add the `DEPLOY_MACHINE` (IP address for your target deployment machine) into your gitlab repository CI/CD environmental variables (should be at `Settings > CI/CD > Variables`).
 
 
-## Setting up `gitlab-ci.yml`
+## Setting up gitlab ci
 
 As pm2 uses a ssh connection we have to setup a public private key pair for ssh use. This can be done using the `ssh-keygen` utility. The public key
 
@@ -107,11 +106,11 @@ deploy-staging:
 The `SSH_PRIVATE_KEY` variables should be added into your gitlab repository CI/CD environmental variables (should be at `Settings > CI/CD > Variables`).
 
 
-## Setup your `DEPLOY_MACHINE`
+## Setup your deployment machine
 
 The final step consists of only 2 steps and will get everything working together.
 
-1. `ssh` into your target deployment machine and add the public key corresponding to the `SSH_PRIVATE_KEY` you've generated for this purpose into the `authorized_keys` file in `~/.ssh` (from [here](#setting-up-gitlab-ciyml)).
+1. `ssh` into your target deployment machine and add the public key corresponding to the `SSH_PRIVATE_KEY` you've generated for this purpose into the `authorized_keys` file in `~/.ssh` (from [here](#setting-up-gitlab-ci)).
 2. Generate another public private key pair on your deployment machine and add the public key as a deploy key on your gitlab repository (should be at `Settings > Repository > Deploy Key`).
 
 Note 2 key pairs should exists at this point, one to allow `pm2` to deploy from gitlab ci to your target deployment machine, another to allow your target deployment machine to `git pull` your new changes down from gitlab.
@@ -122,7 +121,7 @@ With this setup, gitlab ci should automatically deploy your branch to your targe
 
 There might be multiple reasons that the CI/CD process fails to authenticate with the target deployment machine:
 
-1. Lack of any 1 of the 2 required key pairs. See [previous section](#setup-your-deploy_machine).
+1. Lack of any 1 of the 2 required key pairs. See [previous section](#setup-your-deployment-machine).
 2. Incorrect key pairs
 3. Unable to authenticate due to different naming for key store file from default. `id_rsa` is usually where `sshd` would try to locate the keys, but it might nto find it due to your provided naming. As such we will need to add a `config` file in `~/.ssh` to indicate which keys belong to who. An example:
 
