@@ -7,12 +7,11 @@ I host some of my work code repository on gitlab, and often deploy builds to a v
 
 ## Background
 
-Since I work with Javascript and Typescript quite a lot, `pm2` became the go to process manager for me. When working with it, I discovered that it provided a handy `pm2 deploy` command for use, which I then decide to leverage.
+When working with Javascript and Typescript, `pm2` became my go to process manager. I eventually discovered that it provided a handy `pm2 deploy` command for use, which I then decide to leverage to automate deployment of my server.
 
 The behavior I wanted was simple; On push to specific branch, gitlab should deploy the newest changes to the targeted machine and environment, e.g. If I push some changes to the `staging` branch, I expect the newest changes to be pushed to the target vm `staging` environment.
 
-
-This is how I came up with what I have here, a simple and straight forward method that does not require additional software to be installed in addition to what was already used. Note that this method does not employ the use of a self hosted `gitlab-runner`, and as such may have caveats to it that does not fit your use case, such as security and workload concerns. Please do your research before using in wide spread production.
+This is how I came up with what I have here, a simple and straight forward method that does not require additional software to be installed in addition to what was already used. Note that this method does not employ the use of a self hosted `gitlab-runner`, and as such may have caveats to it that does not fit your use case, such as security and workload concerns. Please do your own research before using in wide spread production.
 
 ## `ecosystem.config.js` setup
 
@@ -66,7 +65,7 @@ Remember to add the `DEPLOY_MACHINE` (IP address for your target deployment mach
 
 ## Setting up gitlab ci
 
-As pm2 uses a ssh connection we have to setup a public private key pair for ssh use. This can be done using the `ssh-keygen` utility. The public key
+As pm2 uses a ssh connection we have to setup a public private key pair for ssh use. This can be done using the `ssh-keygen` utility.
 
 In the end, the `gitlab-ci.yml` should look something like this.
 
@@ -103,7 +102,7 @@ deploy-staging:
     - staging
 ```
 
-The `SSH_PRIVATE_KEY` variables should be added into your gitlab repository CI/CD environmental variables (should be at `Settings > CI/CD > Variables`).
+The `SSH_PRIVATE_KEY` variable should be added into your gitlab repository CI/CD environmental variables (should be at `Settings > CI/CD > Variables`). It should use the private key that you've generated with `ssh-keygen` prior to this.
 
 
 ## Setup your deployment machine
