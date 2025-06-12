@@ -82,20 +82,24 @@ We will later be able to generate a ZK proof attesting to this trace, which in t
 
 ### 2. Convert the traces to tables
 
+We then need to convert the traces into multiple tables.
+
 ### 3. Defining the constraints on the tables
+
+With the tables defined, we further constraint on the tables, in order to constraint the transition
 
 ### 4. Convert the tables and their constraints into polynomials for proving
 
-If you do a quick search on Google, you'll find that there's quite a few different tutorial and implementation for a Zk-fied BrainfuckVM. For this project we are using the implementation by Alan Szepieniec (`aszepieniec` is his github handle).
+With the tables and their constraints properly defined, we can now proceed with expressing the tables and constraints as polynomials, which can then be used for proof generation. This article won't cover the details for this process, but if you are interested and want to look further into it, the following info should help you find what you need.
 
-If you are interested in knowing more about the implementation, you can find the code for this implementation on `aszepieniec`'s [github repo](https://github.com/aszepieniec/stark-brainfuck), there's also articles written for this implementation that walks you through the details in more depth than I am doing here:
+If you do a quick search on Google, you'll find that there's quite a few different tutorial and implementation for a Zk BrainfuckVM. For this project we are using the implementation by Alan Szepieniec (`aszepieniec` is his github handle), you can find the code for this implementation on his [github repo](https://github.com/aszepieniec/stark-brainfuck), there's also articles written for this implementation that walks you through the details in more depth than I am doing here:
 
 - [Neptune Cash Brainfuck STARK Tutorial](https://neptune.cash/learn/brainfuck-tutorial/)
 - [Alan Szepieniec's BrainSTARK tutorial](https://aszepieniec.github.io/stark-brainfuck/)
 
-I also did not cover the nitty gritty details on the proof system implementation for ZK-STARKs, but if you're interested in getting more context and understanding on it you can check out the [Anatomy of a STARK](https://aszepieniec.github.io/stark-anatomy/) article, which is a comprehensive tutorial also written by Alan.
+If you are interested in the details on the ZK-STARKs proof system, which is the proof system that this ZKBFVM is using, you might be able to get more context and understanding on it if you check out the [Anatomy of a STARK](https://aszepieniec.github.io/stark-anatomy/) article, which is a comprehensive hands on tutorial also written by Alan Szepieniec.
 
-## Extending the ZKBFVM: Adding a new unary operator
+## Extending the ZKBFVM: Adding the `^` operator
 
 Let's start off by implementing a new unary operator like the current existing ones we have. Specifically we want to implement the `^` operator. Although the `^` operator is usually used to for either the bitwise XOR or the exponential operator, for the sake of simplicity here we are using it as a square(to take the power of 2) operator.
 
@@ -103,11 +107,19 @@ That is, when the VM encounters the unary operator `^`, it should take the value
 
 <!-- Go through what is in the talk -->
 
-## Extending the ZKBFVM Part 2: Adding a binary operator
+The implementation method for this operator is similar to the current operators.
+
+First we'll have to add support for this new operator in the VM, which will allow the VM to
+
+## Extending the ZKBFVM Part 2: Adding the `*` operator
 
 With the `^` operator implemented, let's try implementing something a little bit more complicated: a binary operator. The operator we decided to implement in this case is the multiply operator, `*`.
 
 <!-- Go through what is in the talk -->
+
+There's multiple ways you can define the multiplication operator; In fact, you could probably find a way to implement multiplication as an unary operator, but here we are explicitly trying to implement a binary operator in order to gain more insight into how a binary operator will change the constraints for the VM.
+
+Since binary operation is not generally supported by the Brainfuck VM, we have to first define how the syntax for this operation will look like in the language.
 
 ## Conclusion
 
